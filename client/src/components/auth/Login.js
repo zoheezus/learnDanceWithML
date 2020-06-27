@@ -29,35 +29,37 @@ const Login = ({ login, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className="large text-primary">Sign In</h1>
-      <p className="lead">
-        <i className="fas fa-user"></i> Sign Into Your Account
-      </p>
-      <form className="form" onSubmit={(e) => onSubmit(e)}>
-        <div className="form-group">
-          <input
-            type="email"
-            placeholder="Email Address"
-            name="email"
-            value={email}
-            onChange={(e) => onChange(e)}
-          />
+      <div className="App-header">
+        <div className="login-register-div">
+          <div className="title">Sign in</div>
+          <form className="form-signin" onSubmit={(e) => onSubmit(e)}>
+            <div className="form-group">
+              
+              <input
+                type="email"
+                placeholder="Email Address"
+                name="email"
+                value={email}
+                onChange={(e) => onChange(e)}
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={password}
+                onChange={(e) => onChange(e)}
+                minLength="6"
+              />
+            </div>
+            <input type="submit" className="signin-register-button" value="Login" />
+          </form>
+          <p className="signup-link-2">
+            Don't have an account? <Link to="login">Sign Up</Link>
+          </p>
         </div>
-        <div className="form-group">
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            value={password}
-            onChange={(e) => onChange(e)}
-            minLength="6"
-          />
-        </div>
-        <input type="submit" className="btn btn-primary" value="Login" />
-      </form>
-      <p className="my-1">
-        Don't have an account? <Link to="login">Sign Up</Link>
-      </p>
+      </div>
     </Fragment>
   );
 };

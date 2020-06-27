@@ -28,7 +28,7 @@ const App = () => {
     <Provider store={store}>
       <Router>
         <Fragment>
-          <Navbar />
+          {/* <Navbar /> */}
           <Route exact path="/" component={Landing} />
           <section className="container">
             <Alert />
