@@ -12,10 +12,10 @@ Make sure node, npm, and git are all installed.
 
 1. `git clone https://github.com/zoheezus/learnDanceWithML.git`
 2. create a `default.json` file in the config folder (This is your key, so do not share it with anyone else.)
-  * include in it the `mongoURI` and a `jwtSecret`
+    * include in it the `mongoURI` and a `jwtSecret`
 3. `cd` into the cloned project folder and run the below commands in order
-  1. npm install
-  2. cd client/
-  3. npm install
-  4. cd ..
-  5. npm run dev
+    1. `npm install`
+    2. `cd client/`
+    3. `npm install`
+    4. `cd ..`
+    5. `npm run dev`
